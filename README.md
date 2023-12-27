@@ -24,4 +24,16 @@ Created this for learning purpose
 
 -  In that we can see the we get the element ID `root` which is the builtin component to include the html files.
 
+-  cd into the project folder and give `npm start`.
+
+-  It will open the `localhost:3000` browser, which includes the basic react view.
+
+## App component:
+
+-  The App component is the default component, which is created when we create the react app.
+
+-  In index.js file, we can view that `./App` is imported.
+
+-  In that `app component` is injected into the DOM and ID is get from the `root`.
+
 -  
