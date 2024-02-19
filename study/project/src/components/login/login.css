@@ -1,10 +1,10 @@
-/* src/components/login.css */
+/* src/components/signup.css */
 .signup-container {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: url('../assets/Signup_background.png'); /* Replace with the actual path to your login background image */
+    background-image: url('../assets/Signup_background.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -65,20 +65,22 @@
   
 button {
     width: 15%;
-    padding: 10px;
+    padding: 15px;
     background-color: #492F5D;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-left: 15rem;
+    margin-top: 15px;
 }
 
-/* Move signup link to the next line */
+/* Move login link to the next line */
 .signup-card h4 {
     margin-top: 10px;
 }
 
-/* Create a new container for the signup link to move it to the next line */
+/* Create a new container for the login link to move it to the next line */
 .login-container {
     width: 100%;
     text-align: center;

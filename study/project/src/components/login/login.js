@@ -8,7 +8,7 @@ const Login = () => {
 
     const handleSignupClick = () => {
       // Redirect to the login page
-      navigate('/signup');
+      navigate('/adduser');
     };
 
   return (
@@ -32,6 +32,11 @@ const Login = () => {
           <div className="form-group">
             <label htmlFor="password">Password</label>
             <input type="text" id="password" name="password" />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="company">Company</label>
+            <input type="text" id="company" name="company" />
           </div>
 
         {/* Submit Button */}
