@@ -5,6 +5,8 @@ import Signup from './components/signup/signup';
 import Login from './components/login/login';
 import Adduser from './components/adduser/adduser';
 import Header from './components/header/header';
+// import AddCustomer from './components/addcustomer/addcustomer';
+
 
 const App = () => {
   return (
@@ -15,6 +17,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/adduser" element={<Adduser />} />
         <Route path="/header" element={<Header />} />
+        {/* <Route path="/addcustomer" element={<AddCustomer />} /> */}
         {/* Add more routes as needed */}
       </Routes>
     </Router>

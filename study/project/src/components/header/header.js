@@ -1,9 +1,22 @@
 // Header.js
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import logo from '../assets/logo.png'; // Import your logo image
 import './header.css'; // Import header styles
 
 const Header = () => {
+    const navigate = useNavigate();
+
+    const handleAdduserClick = () => {
+        // Redirect to the add user page
+        navigate('/adduser');
+    };
+
+    const handleAddCustomerClick = () => {
+        // Redirect to the add user page
+        navigate('/addcustomer');
+    };
+
     return (
         <header className="header">
             <div className="logo-container">
@@ -14,8 +27,8 @@ const Header = () => {
             </div>
             <nav classname="menu-bar">
                 <ul className="menu">
-                    <li>Add User</li>
-                    <li>Add Customer</li>
+                    <li onClick={handleAdduserClick}>Add User</li>
+                    <li onClick={handleAddCustomerClick}>Add Customer</li>
                     <li>Upload Invoice</li>
                     <li>Show Transactions</li>
                 </ul>

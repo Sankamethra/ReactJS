@@ -8,8 +8,13 @@ const Login = () => {
 
     const handleSignupClick = () => {
       // Redirect to the login page
-      navigate('/adduser');
+      navigate('/signup');
     };
+
+    const handleLoginClick = () => {
+      // Redirect to the add user page
+      navigate('/adduser');
+  };
 
   return (
     <div className="signup-container">
@@ -40,7 +45,7 @@ const Login = () => {
           </div>
 
         {/* Submit Button */}
-        <button type="submit">Login</button>
+        <button type="submit" onClick={handleLoginClick}>Login</button>
         <div className="login-container">
             <h4 className="signup-heading" onClick={handleSignupClick}>
                 Don't Have an Account? Signup
