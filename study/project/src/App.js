@@ -6,6 +6,8 @@ import Login from './components/login/login';
 import Adduser from './components/adduser/adduser';
 import Header from './components/header/header';
 import AddCustomer from './components/addcustomer/addcustomer';
+import FileUpload from './components/fileupload/fileupload';
+import ShowTransactions from './components/showtransactions/showtransactions';
 
 
 const App = () => {
@@ -18,6 +20,9 @@ const App = () => {
         <Route path="/adduser" element={<Adduser />} />
         <Route path="/header" element={<Header />} />
         <Route path="/addcustomer" element={<AddCustomer />} />
+        <Route path="/fileupload" element={<FileUpload />} />
+        <Route path="/showtransactions" element={<ShowTransactions/>} />
+
         {/* Add more routes as needed */}
       </Routes>
     </Router>

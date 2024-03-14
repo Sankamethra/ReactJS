@@ -17,6 +17,16 @@ const Header = () => {
         navigate('/addcustomer');
     };
 
+    const handleFileUploadClick = () => {
+        // Redirect to the add user page
+        navigate('/fileupload');
+    };
+
+    const handleShowTransactionsClick = () => {
+        // Redirect to the add user page
+        navigate('/showtransactions');
+    };
+
     return (
         <header className="header">
             <div className="logo-container">
@@ -29,8 +39,8 @@ const Header = () => {
                 <ul className="menu">
                     <li onClick={handleAdduserClick}>Add User</li>
                     <li onClick={handleAddCustomerClick}>Add Customer</li>
-                    <li>Upload Invoice</li>
-                    <li>Show Transactions</li>
+                    <li onClick={handleFileUploadClick}>Upload Invoice</li>
+                    <li onClick={handleShowTransactionsClick}>Show Transactions</li>
                 </ul>
             </nav>
             <div className="profile-icon">
